@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.imtiazaminsajid.sharedpreference.MainActivity">
+
+    <EditText
+        android:id="@+id/emailValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        />
+
+    <EditText
+        android:id="@+id/passValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        />
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:background="#73fc03"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:onClick="saveUser"
+        />
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/retrieve"
+        android:background="#603dfc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrieve"
+        android:layout_gravity="center"
+        android:onClick="showUser"
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_marginTop="8dp"
+        android:background="#ff2626"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_gravity="center"
+        android:onClick="deleteUser"
+        />
+
+    <TextView
+        android:id="@+id/show_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+
+        />
+<TextView
+        android:id="@+id/show_pass"
+    android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+    android:layout_gravity="center"
+        android:textSize="25dp"
+
+        />
+
+</LinearLayout>
